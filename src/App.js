@@ -4,6 +4,7 @@ import Navigation from './layouts/navigation';
 import Home from './components/Home/Home';
 import ListItem from './components/Details/ListItem';
 import store from './redux/configureStore';
+import Details from './components/Details/Details';
 
 const App = () => (
   <div className="App">
@@ -12,7 +13,8 @@ const App = () => (
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="ListItem" element={<ListItem />} />
+          <Route path="/ListItem" element={<ListItem />} />
+          <Route path="/Details" element={<Details />} />
         </Routes>
       </Router>
     </Provider>

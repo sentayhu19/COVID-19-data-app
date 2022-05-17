@@ -1,10 +1,11 @@
-import { FETCHDATA, FETCHDATAERROR } from './actions';
+import { FETCHDATA, FETCHDATAERROR, FETCHCOUNTRYDATA } from './actions';
 
 const initState = {
   countries: {
     countries: [],
     loading: true,
     error: true,
+    view: [],
   },
 };
 const covidDataReducer = (state = initState, action) => {
@@ -19,6 +20,11 @@ const covidDataReducer = (state = initState, action) => {
       return {
         ...state,
         error: true,
+      };
+    case FETCHCOUNTRYDATA:
+      return {
+        ...state,
+        view: action.payload,
       };
     default:
       return state;

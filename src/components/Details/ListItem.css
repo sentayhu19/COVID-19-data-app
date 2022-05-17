@@ -1,3 +1,8 @@
+:root{
+    --oddbg: rgb(73, 65, 222);
+    --even: rgb(46, 83, 231);
+}
+
 .country{
     border: 1px solid black;
     height: 150px;
@@ -6,4 +11,9 @@
 .country:nth-child(odd){
     float: left;
     width: 50%;
+}
+.country-btn{
+    background-color: none;
+    height: 150px;
+    width: 203px;
 }
