@@ -1,0 +1,9 @@
+.country{
+    border: 1px solid black;
+    height: 150px;
+}
+
+.country:nth-child(odd){
+    float: left;
+    width: 50%;
+}

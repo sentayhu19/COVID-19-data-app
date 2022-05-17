@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Navigation from './layouts/navigation';
-import Home from './components/Home';
-import Details from './components/Details/Details';
+import Home from './components/Home/Home';
+import ListItem from './components/Details/ListItem';
 import store from './redux/configureStore';
 
 const App = () => (
@@ -12,7 +12,7 @@ const App = () => (
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Details" element={<Details />} />
+          <Route path="ListItem" element={<ListItem />} />
         </Routes>
       </Router>
     </Provider>
