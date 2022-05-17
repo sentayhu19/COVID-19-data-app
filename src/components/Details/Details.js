@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Details = () => (
-  <div>Detail</div>
+const Details = ({ countries }) => (
+  <div>
+    <p>{countries}</p>
+
+  </div>
 );
 export default Details;

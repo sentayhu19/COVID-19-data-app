@@ -1,12 +1,12 @@
-import axios from 'axios';
-import { fetchdata } from './actions';
+import { fetchdata, fetchdataerror } from './actions';
 
-const Url = axios.create({ BaseURL: ' https://api.covid19tracking.narrativa.com/api/' });
+const axios = require('axios');
 
-const getDataAPI = () => (dispatch) => {
-  Url.get('/2022/angola').then((res) => {
-    console.log('From API: ', res);
-    dispatch(fetchdata(res.data));
+const getDataAPI = () => async (dispatch) => {
+  await axios.get('https://api.covid19api.com/summary').then((res) => {
+    dispatch(fetchdata(res.data.Countries));
+  }).catch(() => {
+    dispatch(fetchdataerror());
   });
 };
 export default getDataAPI;
