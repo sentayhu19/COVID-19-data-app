@@ -1,4 +1,7 @@
-
+:root{
+    --search-bg: #1a3871;
+    --white: rgb(254, 254, 254);
+}
 .covid-19-pic{
     width: 100%;
     height: 20%;
@@ -9,5 +12,20 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 40%;
-    width: 50%;
+    width: 60%;
+    border-radius: 300px;
+}
+.sort-wrap{
+    background-color: var(--search-bg);
+}
+.sort-title{
+    color: var(--white)
+}
+.sort-l1{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sort{
+    width: 40%;
 }

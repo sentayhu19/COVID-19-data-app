@@ -11,7 +11,7 @@ const getDataAPI = () => async (dispatch) => {
 };
 export const getCountryData = (countryName) => (dispatch) => {
   console.log('fetching from API: ', countryName);
-  axios.get(`https://api.covid19tracking.narrativa.com/api/2021-03-22/country/${countryName}`).then((res) => {
+  axios.get(`https://api.covid19tracking.narrativa.com/api/2022-03-22/country/${countryName}`).then((res) => {
     const incomming = res.data.dates;
     const data = Object.values(incomming)[0].countries;
     dispatch(fetchcountrydata(data));

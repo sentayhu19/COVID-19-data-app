@@ -31,6 +31,7 @@
 .country-name{
     float: right;
     color: var(--white);
+    margin-top: 100px;
 }
 .country-list:nth-child(4n-1), .country:nth-child(4n-2) {
     background-color: var(--darkblue);
