@@ -1,12 +1,10 @@
 import { FETCHDATA, FETCHDATAERROR, FETCHCOUNTRYDATA } from './actions';
 
 const initState = {
-  countries: {
-    countries: [],
-    loading: true,
-    error: true,
-    view: [],
-  },
+  countries: [],
+  loading: true,
+  error: true,
+  view: [],
 };
 const covidDataReducer = (state = initState, action) => {
   switch (action.type) {
@@ -25,6 +23,7 @@ const covidDataReducer = (state = initState, action) => {
       return {
         ...state,
         view: action.payload,
+        loading: false,
       };
     default:
       return state;

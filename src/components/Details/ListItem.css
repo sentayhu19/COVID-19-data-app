@@ -17,3 +17,14 @@
     height: 150px;
     width: 203px;
 }
+.mask{
+    width: 45px;
+    height: 45px;
+}
+.arrow-right{
+    float: right;
+    width: 25px;
+}
+.country-name{
+    float: right;
+}

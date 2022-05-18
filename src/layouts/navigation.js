@@ -8,6 +8,7 @@ import './navigation.css';
 const Navigation = () => (
   <nav>
     <NavLink to="/" className="back-to-home">Back</NavLink>
+    <h2 className="title">COVID-19 Data</h2>
     <div className="mic-gear">
       <FontAwesomeIcon icon={faMicrophone} className="mic" />
       <FontAwesomeIcon icon={faGear} className="gear" />

@@ -1,5 +1,5 @@
 :root {
-  --heading: rgb(28, 67, 241);
+  --heading: #4369b1;
   --white: rgb(255, 255, 255);
 }
 
@@ -29,5 +29,9 @@ nav {
 .back-to-home {
   color: var(--white);
   padding-left: 5%;
+  align-self: center;
+}
+.title{
+  color: var(--white);
   align-self: center;
 }

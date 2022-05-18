@@ -9,15 +9,17 @@ const Home = () => {
   useEffect(() => {
     dispatch(getDataAPI());
   }, [dispatch]);
-  const { countries, loading, error } = useSelector((state) => state.covidDataReducer);
+  const { countries, loading } = useSelector((state) => state.covidDataReducer);
+  if (loading === true) {
+    return <div><img src="https://c.tenor.com/YPOStjIfQ2IAAAAM/loading-waiting.gif" className="loading-animation" alt="loading..." /></div>;
+  }
   try {
     return (
       <>
-        {loading ? <h1>LOADING...</h1> : ''}
         <img src="https://www.emeraldgrouppublishing.com/sites/default/files/styles/service_page_banner_desktop/public/image/covid-cells.jpg" alt="COVID-19" className="covid-19-pic" />
         <div className="country-list">
-          {countries.map((list) => (
-            <ListItem key={list.name} countries={list.name} />
+          {countries.map((list, i) => (
+            <ListItem key={list.name} countries={list.name} i={i} />
           ))}
         </div>
       </>
@@ -29,7 +31,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// NewConfirmed={c.NewConfirmed}
-//              NewDeaths={c.NewDeaths} TotalConfirmed={c.TotalConfirmed}
-//               TotalDeaths={c.TotalDeaths} TotalRecovered={c.TotalRecovered}

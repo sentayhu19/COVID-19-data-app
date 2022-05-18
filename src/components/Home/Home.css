@@ -1,4 +1,17 @@
+:root {
+    --darkblue: #4066ad;
+    --lightblue: #4872c2;
+}
+
 .covid-19-pic{
     width: 100%;
     height: 20%;
+}
+
+.loading-animation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    width: 50%;
 }
