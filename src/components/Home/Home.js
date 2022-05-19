@@ -1,60 +1,76 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import getDataAPI from '../../redux/covid-19/api';
 import ListItem from '../Details/ListItem';
-import { search } from '../../redux/covid-19/actions';
 import './Home.css';
+import { sort } from '../../redux/covid-19/actions';
 
 const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getDataAPI());
-  }, [dispatch]);
-  const { countries, loading } = useSelector((state) => state.covidDataReducer);
+  }, []);
+  const { countries, loading, error } = useSelector((state) => state.covidDataReducer);
   if (loading === true) {
     return <div><img src="https://c.tenor.com/YPOStjIfQ2IAAAAM/loading-waiting.gif" className="loading-animation" alt="loading..." /></div>;
   }
-  let data;
+  if (error === true) {
+    return <div className="error">Network Error, Try Refreshing page</div>;
+  }
   const handleSearch = (e) => {
     let sorted;
-    console.log(e.target.value);
-    // const searchResult = countries.filter((c) => c.name === e.target.value.trim());
     if (e.target.value === 'a-z') {
-      sorted = countries.sort((a, b) => a.name.localeCompare(b.name));
-    } else if(e.target.value === 'z-a') {
-      sorted = countries.sort((a, b) => b.name.localeCompare(a.name));
-    }
-    else{
+      sorted = countries.sort((a, b) => a.Country.localeCompare(b.Country));
+    } else if (e.target.value === 'z-a') {
+      sorted = countries.sort((a, b) => b.Country.localeCompare(a.Country));
+    } else if (e.target.value === 'asc') {
+      sorted = countries.sort((a, b) => a.TotalConfirmed - b.TotalConfirmed);
+    } else if (e.target.value === 'dsc') {
+      sorted = countries.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed);
+    } else {
       dispatch(getDataAPI());
     }
-    dispatch(search(sorted));
+    dispatch(sort(sorted));
   };
-
-  try {
-    return (
-      <>
+  let globalConf = 0;
+  countries.forEach((e) => {
+    globalConf += e.TotalConfirmed;
+  });
+  return (
+    <>
+      <div className="header">
         <img src="https://www.emeraldgrouppublishing.com/sites/default/files/styles/service_page_banner_desktop/public/image/covid-cells.jpg" alt="COVID-19" className="covid-19-pic" />
-        <div className="sort-wrap">
-          <div className="sort-l1">
-            <span className="sort-title">Sort By Country Name</span>
-            <select className="sort" onChange={handleSearch}>
-              <option value='sort'>Sort</option>
-              <option value="a-z">A-Z</option>
-              <option value="z-a">Z-A</option>
-            </select>
-          </div>
+        <h2 className="global-info">
+          Todays Global Confirmed
+          {' '}
+          <br />
+          {' '}
+          {(globalConf).toLocaleString('en-US')}
+        </h2>
+      </div>
+      <div className="sort-wrap">
+        <div className="sort-l1">
+          <span className="sort-title">Sort By Country Name</span>
+          <select className="sort" onChange={handleSearch}>
+            <option value="sort">Sort</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+            <option value="asc">Asc. Total Confirmed</option>
+            <option value="dsc">Dsc. Total Confirmed</option>
+          </select>
         </div>
-        <div className="country-list">
-          {countries.map((list) => (
-            <ListItem key={list.name} countries={list.name} />
-          ))}
-        </div>
-      </>
-    );
-  } catch (e) {
-    console.log('CATCHED', e);
-  }
-  return '';
+      </div>
+      <div className="country-list">
+        {countries.map((list) => (
+          <ListItem
+            key={list.Country}
+            countries={list.Country}
+            TotalConfirmed={list.TotalConfirmed}
+          />
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default Home;

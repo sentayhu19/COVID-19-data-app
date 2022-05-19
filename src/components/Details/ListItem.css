@@ -7,7 +7,7 @@
 
 .country{
     border: 1px solid black;
-    height: 150px;
+    height: 173px;
 }
 
 .country:nth-child(odd){
@@ -19,20 +19,26 @@
     height: 150px;
     width: 203px;
 }
-.mask{
+.covid-icn{
     width: 45px;
-    height: 45px;
+    height: 42px;
 }
 .arrow-right{
-    float: right;
+    position: relative;
+    top: 0;
     width: 25px;
     color: white;
+    text-align: right;
+    margin-left: 70%;
 }
 .country-name{
-    float: right;
     color: var(--white);
-    margin-top: 100px;
+    width: 145px;
 }
+.total-confirmed{
+    color: var(--white);
+}
+
 .country-list:nth-child(4n-1), .country:nth-child(4n-2) {
     background-color: var(--darkblue);
 }
@@ -47,7 +53,11 @@
 .country:nth-child(8n+11){
     background-color: var(--darkblue);
 }
-
+.summary {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
 
 
 

@@ -1,21 +1,22 @@
 import {
-  FETCHDATA, FETCHDATAERROR, FETCHCOUNTRYDATA, SORT, DETAILSTART
+  FETCHDATA, FETCHDATAERROR, FETCHCOUNTRYDATA, SORT, DETAILSTART,
 } from './actions';
 
 const initState = {
   countries: [],
   loading: true,
-  error: true,
+  error: false,
   view: [],
+  back: false,
 };
 const covidDataReducer = (state = initState, action) => {
-  const data = action.payload;
   switch (action.type) {
     case FETCHDATA:
       return {
         ...state,
         countries: action.payload,
         loading: false,
+        back: false,
       };
     case FETCHDATAERROR:
       return {
@@ -27,6 +28,7 @@ const covidDataReducer = (state = initState, action) => {
         ...state,
         view: action.payload,
         loading: false,
+        back: true,
       };
     case SORT:
       return {
@@ -34,11 +36,11 @@ const covidDataReducer = (state = initState, action) => {
         countries: action.payload,
         loading: false,
       };
-      case DETAILSTART:
-        return{
+    case DETAILSTART:
+      return {
         ...state,
-        loading:true,
-      }
+        loading: true,
+      };
     default:
       return state;
   }

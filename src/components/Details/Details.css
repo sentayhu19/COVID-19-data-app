@@ -21,3 +21,11 @@ body{
     height: 35px;
     align-items: center;
 }
+
+.flag{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 10px;
+}

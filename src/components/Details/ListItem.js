@@ -6,15 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import covid from '../../images/covid.png';
 
-const ListItem = ({ countries }) => {
+const ListItem = ({ countries, TotalConfirmed }) => {
   const passData = countries;
   return (
     <div className="country">
-      <div>
+      <div className="summary">
         <NavLink id={countries} to="/Details" state={{ country: passData }}>
-          <img src={covid} className="mask" alt="COVID-19" />
           <FontAwesomeIcon icon={faCircleArrowRight} className="arrow-right" />
+          <img src={covid} className="covid-icn" alt="COVID-19" />
           <p className="country-name">{countries}</p>
+          <p className="total-confirmed">{(TotalConfirmed).toLocaleString('en-US')}</p>
         </NavLink>
       </div>
     </div>
@@ -22,5 +23,6 @@ const ListItem = ({ countries }) => {
 };
 ListItem.propTypes = {
   countries: PropTypes.string.isRequired,
+  TotalConfirmed: PropTypes.string.isRequired,
 };
 export default ListItem;

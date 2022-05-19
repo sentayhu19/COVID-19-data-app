@@ -15,11 +15,11 @@ export const fetchcountrydata = (payload) => ({
   type: FETCHCOUNTRYDATA,
   payload,
 });
-export const search = (payload) => ({
+export const sort = (payload) => ({
   type: SORT,
   payload,
 });
 export const detailStart = () => ({
-  type:DETAILSTART,
+  type: DETAILSTART,
 
-})
+});
