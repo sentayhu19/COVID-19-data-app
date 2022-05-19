@@ -1,44 +1,52 @@
-:root{
-    --search-bg: #1a3871;
-    --white: rgb(254, 254, 254);
-}
-.covid-19-pic{
-    width: 50%;
-    height: 40vh;
+:root {
+  --search-bg: #1a3871;
+  --white: rgb(254, 254, 254);
 }
 
-.loading-animation{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30%;
-    width: 220px;
-    border-radius: 300px;
+.covid-19-pic {
+  width: 50%;
+  height: 40vh;
 }
-.sort-wrap{
-    background-color: var(--search-bg);
+
+.loading-animation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  width: 220px;
+  border-radius: 300px;
 }
-.sort-title{
-    color: var(--white)
+
+.sort-wrap {
+  background-color: var(--search-bg);
 }
-.sort-l1{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+
+.sort-title {
+  color: var(--white);
 }
-.sort{
-    width: 40%;
+
+.sort-l1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.error{
-    color: white;
-    background-color: red;
-    text-align: center;
+
+.sort {
+  width: 40%;
 }
-.header{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+.error {
+  color: white;
+  background-color: red;
+  text-align: center;
 }
-.global-info{
-    align-self: center;
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.global-info {
+  align-self: center;
 }
