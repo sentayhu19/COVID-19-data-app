@@ -75,7 +75,7 @@ const Details = () => {
             </span>
           </div>
           <div className="covid-data">
-            <span> Yesterday New Recovered :</span>
+            <span> Yesterday Confirmed :</span>
             <span key={generate()}>
               {(e.yesterday_confirmed).toLocaleString('en-US')}
             </span>

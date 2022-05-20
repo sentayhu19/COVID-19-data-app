@@ -1,6 +1,39 @@
-# Getting Started with Create React App
+# COVID-19-data-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The Bookstore is a website to store books that allow users to: Display a list of books. Add a book. Remove a selected book.
+
+![BookStore(20)](https://raw.githubusercontent.com/sentayhu19/Bookstore/Bookstore-styling/Screenshot.png)
+
+
+## Live demo comming soon
+
+[Live Demo Link on Netlify](https://serene-zabaione-53a1d6.netlify.app/)
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+- React
+
+### Prerequisites
+
+- VScode or other editor
+
+### Install
+
+#### Cloning the project
+
+ git clone https://github.com/sentayhu19/COVID-19-data-app <Your-Build-Directory>
+``` 
+- cd bookstore
+- npm install # Local dependencies if you want to hack
+- npm install -g # Install globally 
+- npm start
+```
+
 
 ## Available Scripts
 
@@ -39,32 +72,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Sentayhu Berhanu**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@sentayhu19](https://github.com/sentayhu19)
+- LinkedIn: [sentayhu-berhanu](https://www.linkedin.com/in/sentayhu-berhanu-6376579a/)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to check the [issues page](https://github.com/sentayhu19/Bookstore/issues).
 
-### Making a Progressive Web App
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Give a ⭐️ if you like this project!
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-This project was inspired by [Microverse](https://www.microverse.org)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.![](https://img.shields.io/badge/Microverse-blueviolet)

@@ -4,6 +4,7 @@ import getDataAPI from '../../redux/covid-19/api';
 import ListItem from '../Details/ListItem';
 import './Home.css';
 import { sort } from '../../redux/covid-19/actions';
+import covid19 from '../../images/covid19.jpg';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -39,7 +40,7 @@ const Home = () => {
   return (
     <>
       <div className="header">
-        <img src="https://www.emeraldgrouppublishing.com/sites/default/files/styles/service_page_banner_desktop/public/image/covid-cells.jpg" alt="COVID-19" className="covid-19-pic" />
+        <img src={covid19} alt="COVID-19" className="covid-19-pic" />
         <h2 className="global-info">
           Todays Global Confirmed
           {' '}

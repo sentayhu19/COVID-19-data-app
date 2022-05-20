@@ -23,6 +23,6 @@ const ListItem = ({ countries, TotalConfirmed }) => {
 };
 ListItem.propTypes = {
   countries: PropTypes.string.isRequired,
-  TotalConfirmed: PropTypes.string.isRequired,
+  TotalConfirmed: PropTypes.number.isRequired,
 };
 export default ListItem;
