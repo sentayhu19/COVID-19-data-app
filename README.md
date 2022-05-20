@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The Bookstore is a website to store books that allow users to: Display a list of books. Add a book. Remove a selected book.
+The Covid-19 data-app collects information from API and present data for the novel coronavirus.
 
 <img src="https://raw.githubusercontent.com/sentayhu19/COVID-19-data-app/features/src/images/details.png" width="45%" align="right" />
 <img src="https://raw.githubusercontent.com/sentayhu19/COVID-19-data-app/features/src/images/home.png" width="45%" />
