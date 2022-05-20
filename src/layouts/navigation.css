@@ -1,0 +1,38 @@
+:root {
+  --heading: #4369b1;
+  --white: rgb(255, 255, 255);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--heading);
+  height: 50px;
+  width: 100%;
+}
+
+.mic-gear {
+  display: flex;
+  gap: 20%;
+  justify-content: center;
+  padding-right: 5%;
+}
+
+.gear,
+.mic {
+  width: 23px;
+  height: 23px;
+  color: var(--white);
+  align-self: center;
+}
+
+.back-to-home {
+  color: var(--white);
+  padding-left: 5%;
+  align-self: center;
+}
+
+.title {
+  color: var(--white);
+  align-self: center;
+}

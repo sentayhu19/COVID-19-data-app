@@ -1,0 +1,51 @@
+:root {
+  --search-bg: #1a3871;
+  --white: rgb(254, 254, 254);
+}
+
+.covid-19-pic {
+  width: 50%;
+  height: 40vh;
+}
+
+.loading-animation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  width: 220px;
+  border-radius: 300px;
+}
+
+.sort-wrap {
+  background-color: var(--search-bg);
+}
+
+.sort-title {
+  color: var(--white);
+}
+
+.sort-l1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sort {
+  width: 40%;
+}
+
+.error {
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+}
+
+.global-info {
+  align-self: center;
+}

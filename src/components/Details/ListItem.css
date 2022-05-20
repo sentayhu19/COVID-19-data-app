@@ -1,0 +1,64 @@
+:root {
+  --darkblue: #24498f;
+  --lightblue: #4872c2;
+  --white: rgb(254, 254, 254);
+}
+
+.country {
+  border: 1px solid black;
+  height: 173px;
+}
+
+.country:nth-child(odd) {
+  float: left;
+  width: 50%;
+}
+
+.covid-icn {
+  width: 45px;
+  height: 42px;
+}
+
+.arrow-right {
+  position: relative;
+  top: 0;
+  width: 25px;
+  color: white;
+  text-align: right;
+  margin-left: 70%;
+}
+
+.country-name {
+  color: var(--white);
+  width: 145px;
+}
+
+.total-confirmed {
+  color: var(--white);
+}
+
+.country-list:nth-child(4n-1),
+.country:nth-child(4n-2) {
+  background-color: var(--darkblue);
+}
+
+.country:nth-child(4n+4) {
+  background-color: var(--lightblue);
+}
+
+.country-list:nth-child(4n),
+.country:nth-child(4n+1) {
+  background-color: var(--lightblue);
+}
+
+.country:nth-child(3),
+.country:nth-child(8n+7),
+.country:nth-child(8n+11) {
+  background-color: var(--darkblue);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
