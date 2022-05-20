@@ -4,12 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The Bookstore is a website to store books that allow users to: Display a list of books. Add a book. Remove a selected book.
 
-![BookStore(20)](https://raw.githubusercontent.com/sentayhu19/Bookstore/Bookstore-styling/Screenshot.png)
+<img src="https://raw.githubusercontent.com/sentayhu19/COVID-19-data-app/features/src/images/home.png" width="45%" />
+<img src="https://raw.githubusercontent.com/sentayhu19/COVID-19-data-app/features/src/images/details.png" width="45%" align="right" />
+
 
 
 ## Live demo comming soon
 
-[Live Demo Link on Netlify](https://serene-zabaione-53a1d6.netlify.app/)
+[Live Demo Link on Netlify](https://covid-19-data-app1.netlify.app/)
 
 ## Built With
 
