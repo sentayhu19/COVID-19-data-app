@@ -31,7 +31,7 @@ The Covid-19 data-app collects information from API and present data for the nov
 
  git clone https://github.com/sentayhu19/COVID-19-data-app <Your-Build-Directory>
 ``` 
-- cd bookstore
+- cd COVID-19-data-app
 - npm install # Local dependencies if you want to hack
 - npm install -g # Install globally 
 - npm start
@@ -87,7 +87,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sentayhu19/Bookstore/issues).
+Feel free to check the [issues page](https://github.com/sentayhu19/COVID-19-data-app/issues).
 
 ## Show your support
 
@@ -95,7 +95,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--This project was inspired by [Microverse](https://www.microverse.org)
+- Desgin Credit to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
+
+- This project was inspired by [Microverse](https://www.microverse.org)
 
 
 ## 📝 License
