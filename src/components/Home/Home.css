@@ -63,9 +63,11 @@
     width: 60%;
     margin: auto;
   }
-.loading-animation{
-  margin-top: 15%;
-}
+
+  .loading-animation {
+    margin-top: 15%;
+  }
+
   .flag {
     width: 40%;
   }
