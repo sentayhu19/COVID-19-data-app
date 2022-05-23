@@ -20,6 +20,7 @@ The Covid-19 data-app collects information from API and present data for the nov
 - CSS
 - JavaScript
 - React
+- Redux
 
 ### Prerequisites
 
