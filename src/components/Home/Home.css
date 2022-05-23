@@ -13,7 +13,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30%;
+  margin-top: 35%;
   width: 220px;
   border-radius: 300px;
 }
@@ -63,7 +63,9 @@
     width: 60%;
     margin: auto;
   }
-
+.loading-animation{
+  margin-top: 15%;
+}
   .flag {
     width: 40%;
   }
