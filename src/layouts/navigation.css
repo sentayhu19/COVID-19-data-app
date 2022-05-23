@@ -26,13 +26,18 @@ nav {
   align-self: center;
 }
 
+.title {
+  color: var(--white);
+  align-self: center;
+}
+
 .back-to-home {
   color: var(--white);
   padding-left: 5%;
   align-self: center;
 }
 
-.title {
-  color: var(--white);
-  align-self: center;
+.back-to-home:hover,
+.title:hover {
+  color: wheat;
 }

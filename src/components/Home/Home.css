@@ -1,6 +1,7 @@
 :root {
   --search-bg: #1a3871;
   --white: rgb(254, 254, 254);
+  --lightblue: #1a263c;
 }
 
 .covid-19-pic {
@@ -12,7 +13,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30%;
+  margin-top: 35%;
   width: 220px;
   border-radius: 300px;
 }
@@ -48,4 +49,26 @@
 
 .global-info {
   align-self: center;
+}
+
+.country:hover {
+  background-color: #5477f6;
+  box-shadow: 2px 2px 2px 2px rgba(175, 223, 127, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .country-list,
+  .header,
+  .sort-wrap {
+    width: 60%;
+    margin: auto;
+  }
+
+  .loading-animation {
+    margin-top: 15%;
+  }
+
+  .flag {
+    width: 40%;
+  }
 }

@@ -32,3 +32,13 @@ body {
   margin-right: auto;
   padding: 40px 10px;
 }
+
+@media screen and (min-width: 1024px) {
+  .flag {
+    width: 35%;
+  }
+
+  .detail-data {
+    width: 40%;
+  }
+}
